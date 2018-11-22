@@ -16,3 +16,15 @@ def binary_sort(sortedlist,n,x):
 
 n = input("Enter the size of the list: ")
 
+sortedlist = []
+
+for i in range(n):
+ sortedlist.append(input("Enter %dth element: "%i))
+
+x = input("Enter the number to search: ")
+position = binary_sort(sortedlist, n, x)
+
+if(position != -1):
+ print("Entered number %d is present at position: %d"%(x,position))
+else:
+ print("Entered number %d is not present in the list"%x)
